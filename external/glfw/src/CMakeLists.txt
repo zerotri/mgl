@@ -147,7 +147,7 @@ target_include_directories(glfw PUBLIC
 target_include_directories(glfw PRIVATE
                            "${GLFW_SOURCE_DIR}/src"
                            "${GLFW_BINARY_DIR}/src")
-target_link_libraries(glfw PRIVATE Threads::Threads)
+target_link_libraries(glfw PRIVATE Threads::Threads mgl)
 
 # Workaround for CMake not knowing about .m files before version 3.16
 if (CMAKE_VERSION VERSION_LESS "3.16" AND APPLE)
@@ -161,7 +161,7 @@ if (GLFW_BUILD_WIN32)
 endif()
 
 if (GLFW_BUILD_COCOA)
-    target_link_libraries(glfw PRIVATE "-L /usr/local/lib -lmgl"
+    target_link_libraries(glfw PRIVATE "-L /usr/local/lib"
                                        "-framework Cocoa"
                                        "-framework IOKit"
                                        "-framework CoreFoundation")
