@@ -6,8 +6,8 @@
 //
 
 #include <mach/vm_types.h>
-#include "glslang_c_interface.h"
-#include "glslang_c_shader_types.h"
+#include "glslang/Include/glslang_c_interface.h"
+#include "glslang/Include/glslang_c_shader_types.h"
 
 #include "glm_dispatch.h"
 #include "hash_table.h"

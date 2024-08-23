@@ -20,9 +20,9 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <glslang_c_interface.h>
-#include <glslang_c_shader_types.h>
-#include "spirv-tools/libspirv.h"
+#include <glslang/Include/glslang_c_interface.h>
+#include <glslang/Include/glslang_c_shader_types.h>
+#include <spirv-tools/libspirv.h>
 #include "spirv_cross_c.h"
 #include "spirv.h"
 
